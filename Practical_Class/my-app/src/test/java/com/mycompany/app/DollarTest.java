@@ -5,7 +5,7 @@ import org.junit.Test;
 
 
 /**
- * Unit test for simple App.
+ * Unit test for TDD class
  */
 public class DollarTest 
 {
@@ -16,7 +16,15 @@ public class DollarTest
     public void testMultiplication()
     {
         Dollar five = new Dollar(5);
-        five.times(2);
-        assertEquals(10,five.amount);
+        assertEquals(new Dollar(10), five.times(2));
+        assertEquals(new Dollar(15),five.times(3));
+    }
+
+    @Test
+    public void assertEquality(){
+        assertTrue(new Dollar(5).equals(new Dollar(5)));
+        assertFalse(new Dollar(5).equals(new Dollar(6)));
+        assertTrue(new Franc(5).equals(new Franc(5)));
+        assertFalse(new Franc(5).equals(new Franc(6)));
     }
 }
