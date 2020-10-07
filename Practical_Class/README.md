@@ -1,19 +1,5 @@
-## Getting Started
+## TDD Class
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+All the development of this exercise can be found in my-app directory
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-## Dependency Management
-
-The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
-
-
-
-To test : mvn package
-To test and compile the test: java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.Dollar
+2 test classes was created for Dollar and Fac test.
